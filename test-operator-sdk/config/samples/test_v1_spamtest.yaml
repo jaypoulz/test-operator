@@ -1,0 +1,6 @@
+apiVersion: test.jaypoulz.me/v1
+kind: SpamTest
+metadata:
+  name: spamtest-sample
+spec:
+  # TODO(user): Add fields here

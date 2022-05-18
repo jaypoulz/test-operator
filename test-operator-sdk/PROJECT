@@ -1,0 +1,19 @@
+domain: jaypoulz.me
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: test-operator-sdk
+repo: github.com/jaypoulz/test-operator-sdk
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: jaypoulz.me
+  group: test
+  kind: SpamTest
+  path: github.com/jaypoulz/test-operator-sdk/api/v1
+  version: v1
+version: "3"
